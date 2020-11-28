@@ -1,0 +1,10 @@
+Headers de sistema
+#include <stdio.h>
+#include <stdlib.h>
+
+Headers propios
+#include "my_library.h"
+
+NOTA:
+Las librerías o bibliotecas de sistema van con < >
+Las librerías o bibliotecas de programador van con " "
