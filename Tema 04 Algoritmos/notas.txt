@@ -61,7 +61,7 @@ Programación en C:
 C ha sido estandarizado por el American National Standards Institute (ANSI) desde 1989 y posteriormente por la Organización Internacional de Normalización (ISO).
 
 Versiones:
-K&R 		1978-02-22
+K&R     1978-02-22
 C89			1989-12-14
 C90			1990-12-20
 C95			1995-03-30
