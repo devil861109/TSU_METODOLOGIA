@@ -1,14 +1,16 @@
-Algoritmo:
+# Tema 04: Algoritmos
+
+## Algoritmo:
 Serie de pasos ordenados que se realizan para darle solución a "algo".
 
-Características de los algoritmos:
+## Características de los algoritmos:
 * Precisos
 * Bien definidos
 * Exactitud y corrección
 * Finitos
 
-NUNCA OLVIDAR EL PROCESO:
-Entrada -> Proceso -> Salida
+> NUNCA OLVIDAR EL PROCESO:
+> Entrada -> Proceso -> Salida
 
 Una vez hecho el algoritmo, se procede a validarlo
 A este proceso se le conoce como "corrida de escritorio"
@@ -25,9 +27,7 @@ Se recomienda que se haga en el órden planteado anteriormente.
 
 Una vez que tenemos listo el algoritmo, podemos pasar a programarlo.
 
---------------------------------------------------------------------
-
-Teoría Básica:
+### Teoría Básica:
 
 En órden (menor a mayor):
 * Lenguaje Máquina
@@ -57,14 +57,14 @@ Los lenguajes de programación se dividen en dos tipos principalmente:
 * Intérpretes
 * Compiladores
 
-Programación en C:
+## Programación en C
+
 C ha sido estandarizado por el American National Standards Institute (ANSI) desde 1989 y posteriormente por la Organización Internacional de Normalización (ISO).
 
-Versiones:
+### Versiones:
 K&R     1978-02-22
 C89			1989-12-14
 C90			1990-12-20
 C95			1995-03-30
 C99			1999-12-16
 C11			2011-12-15
-
