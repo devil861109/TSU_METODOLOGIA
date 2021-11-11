@@ -99,26 +99,20 @@ gcc programa.c -o programa
 
 ## Tipos de Datos
 
-| Tipo               | No. Bits                | Rango                                       |
-| ------------------ | ----------------------- | ------------------------------------------- |
-| char               | 8                       | -128 a 127                                  |
-| unsigned char      | 8                       | 0 a 255                                     |
-| signed char        | 8                       | -128 a 127                                  |
-| short              | 16                      | -32768 a 32767                              |
-| int                | 16                      | -32768 a 32767                              |
-| unsigned int       | 16                      | 0 a 65535                                   |
-| signed int         | 16                      | -32768 a 32767                              |
-| short int          | 16                      | -32768 a 32767                              |
-| unsigned short int | 16                      | 0 a 65535                                   |
-| signed short int   | 16                      | -32768 a 32767                              |
-| long int           | 32                      | -2147483648 a 2147483647                    |
-| signed long int    | 32                      | -2147483648 a 2147483647                    |
-| unsigned long int  | 32                      | 0 a 4294967295                              |
-| long               | 32                      | -2147483648 a 2147483647                    |
-| unsigned long      | 32                      | 0 a 4294967295                              |
-| float              | 32                      | 3.4E-38 a 3.4E+38                           |
-| double             | 64                      | 1.7E-308 a 1.7E+308                         |
-| long double        | 64 ó 80 (según versión) | 1.7E-308 a 1.7E+308 ó 3.4E-4932 a 1.1E+4932 |
+| Tipo               | No. Byte                | Rango                                                                 | Precisión |
+| ------------------ | ----------------------- | --------------------------------------------------------------------- | --------- |
+| char               | 1                       | -128 a 127                                                            |           |
+| unsigned char      | 1                       | 0 a 255                                                               |           |
+| signed char        | 1                       | -128 a 127                                                            |           |
+| int                | 2 o 4 (32 o 64 bits)    | -32,768 a 32,767 o -2,147,483,648 a 2,147,483,647                     |           |
+| unsigned int       | 2 o 4                   | 0 a 65,535 o 0 a 4,294,967,295                                        |           |
+| short              | 2                       | -32,768 a 32,767                                                      |           |
+| unsigned short     | 2                       | 0 a 32,767                                                            |           |
+| long               | 4 o 8 (32 o 64 bits)    | -9223372036854775808 a 9223372036854775807 o -2147483648 a 2147483647 |           |
+| unsigned long      | 4 o 8                   | 0 a 4294967295 o 0 a 18446744073709551615                             |           |
+| float              | 4                       | 1.2E-38 a 3.4E+38                                                     | 6         |
+| double             | 8                       | 2.3E-308 to 1.7E+308                                                  | 15        |
+| long double        | 10                      | 3.4E-4932 to 1.1E+4932                                                | 19        |
 
 ## Identificadores y tipos
 
