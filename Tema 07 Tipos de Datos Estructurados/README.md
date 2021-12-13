@@ -238,3 +238,11 @@ En este caso, podremos llegar a una tercer y última manera de almacenamiento:
 	printf("%s\n", name);
 ```
 Esa manera se le conoce como 'inverted scanset', scanf continúa agregando los valores hasta que encuentra un \n (newline), de esta manera, los espacios quedan almacenados dentro de la cadena de caracteres, y delimitamos el espacio con el %19, de tal manera que solo nos va a permitir almacenar 19 caracteres que se lleguen a encontrar en buffer, puesto que el caracter 20 sería el \n.
+Y para los más avanzados!!
+Si usamos apuntadores:
+```c
+	char *name;
+	scanf ("%m[^\n]s",&name);
+	printf ("%s\n",name);
+```
+Esta sería la manera más elegante de trabajarlo.
