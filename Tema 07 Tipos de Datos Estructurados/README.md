@@ -214,3 +214,27 @@ Aunque puesta aquí sólo a manera de ejemplo, la función está lista para ser 
 Por simplicidad, funciona únicamente para leer de la entrada estándar, pero fácilmente se podría modificar para que trabaje también con archivos. Para eso habría que agregar un tercer argumento: FILE *stream, y reemplazar los getchar() por fgetc(stream).
 
 Finalmente, muchos programadores consideran que, si se quiere tener un programa lo más correcto y tolerante a fallas posible (en cuanto a lectura de datos), se deberían leer todas las variables (incluso de tipo int, float, etc.) en una cadena temporal, usando, por ejemplo, fgets (o incluso nuestra función de ejemplo) y después extraer de esta cadena los datos a leer, mediante sscanf, que funciona igual a scanf, pero en vez de leer los datos del teclado, los lee desde la cadena que le especifiquemos. Esto se deja como un ejercicio para quien quiera implementarlo.
+
+## Actualización de la lectura de caracteres
+
+Existen otras maneras de poder realizar una lectura de caracteres. Otra manera muy famosa es realizar lo siguiente:
+
+```c
+	char name[20];
+	scanf("%[0-9a-zA-Z ]", name);
+```
+Aqui se declara una cadena de tamaño 11, y dentro del scanf delimitamos que nos va a permitir almacenar caracteres del 0 al 9, y letras de la a a la z y de la A a la Z, incluído el espacio. No es una manera muy 'elegante' de realizarlo, pero podría funcionar.
+Si lo realizamos de la siguiente manera:
+```c
+	char name[20];
+	scanf("%[^\n]", name);
+```
+"%[^\n]" tiene el mismo problema que gets(), buffer overflow.
+En este caso, podremos llegar a una tercer y última manera de almacenamiento:
+```c
+	char name[20];
+	// get up to buffer size - 1 characters (to account for NULL terminator)
+	scanf("%19[^\n]", str);
+	printf("%s\n", name);
+```
+Esa manera se le conoce como 'inverted scanset', scanf continúa agregando los valores hasta que encuentra un \n (newline), de esta manera, los espacios quedan almacenados dentro de la cadena de caracteres, y delimitamos el espacio con el %19, de tal manera que solo nos va a permitir almacenar 19 caracteres que se lleguen a encontrar en buffer, puesto que el caracter 20 sería el \n.
